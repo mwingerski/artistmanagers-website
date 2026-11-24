@@ -43,11 +43,11 @@ a{color:#000000}a:hover{color:#ED1B24}
 <form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="background: #FFFFFF; color: #000000; border-radius: 20px; padding: clamp(22px, 2.6vw, 32px); display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; max-width: 640px; box-sizing: border-box">
 <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px">
 <label for="hero-first-name" style="font-size: 16px; font-weight: 700">First name</label>
-<input id="hero-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
+<input required id="hero-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
 </div>
 <div style="flex: 1.3 1 240px; display: flex; flex-direction: column; gap: 8px">
 <label for="hero-email" style="font-size: 16px; font-weight: 700">Email</label>
-<input id="hero-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
+<input required id="hero-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
 </div>
 <button type="submit" style="flex: 1 1 100%; font-family: inherit; background: #ED1B24; color: #FFFFFF; border: none; padding: 16px 30px; border-radius: 999px; font-weight: 800; font-size: 20px; min-height: 56px; cursor: pointer">Send Me the Toolkit</button>
 <p style="margin: 0; flex: 1 1 100%; font-size: 14px; color: #555555; text-align: center">Free. Sent to your inbox right away. Unsubscribe anytime.</p>
@@ -141,15 +141,19 @@ a{color:#000000}a:hover{color:#ED1B24}
 <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center">
 <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <h2 style="margin: 0; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.12; font-weight: 900">Your Toolkit is a click away.</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #222222">Enter your email and we'll send the Independent Artist Toolkit now: the 50 Tips and the Release Checklist.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #222222">Enter your name and email and we'll send the Independent Artist Toolkit now: the 50 Tips and the Release Checklist.</p>
 </div>
-<form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="flex: 1.2 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="flex: 1.2 1 440px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
+<div style="flex: 1 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<label for="break1-first-name" style="font-size: 16px; font-weight: 700">First name</label>
+<input required id="break1-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="width: 100%; font-family: inherit; font-size: 18px; padding: 14px 16px; border-radius: 12px; min-height: 52px; box-sizing: border-box; border: 2px solid #000000; background: #FFFFFF">
+</div>
+<div style="flex: 1.3 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <label for="break1-email" style="font-size: 16px; font-weight: 700">Email</label>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<input id="break1-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="flex: 1 1 240px; min-width: 0; font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; background: #FFFFFF">
-<button type="submit" style="font-family: inherit; background: #000000; color: #FFFFFF; border: none; padding: 14px 26px; border-radius: 999px; font-weight: 800; font-size: 19px; min-height: 52px; cursor: pointer">Send Me the Toolkit</button>
+<input required id="break1-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="width: 100%; font-family: inherit; font-size: 18px; padding: 14px 16px; border-radius: 12px; min-height: 52px; box-sizing: border-box; border: 2px solid #000000; background: #FFFFFF">
 </div>
-<p style="margin: 0; font-size: 14px; color: #333333">Free. No spam. Unsubscribe anytime.</p>
+<button type="submit" style="flex: 1 1 100%; font-family: inherit; background: #000000; color: #FFFFFF; border: none; padding: 14px 26px; border-radius: 999px; font-weight: 800; font-size: 19px; min-height: 52px; cursor: pointer">Send Me the Toolkit</button>
+<p style="margin: 0; flex: 1 1 100%; font-size: 14px; color: #333333">Free. No spam. Unsubscribe anytime.</p>
 </form>
 </div>
 </section>
@@ -236,13 +240,17 @@ a{color:#000000}a:hover{color:#ED1B24}
 <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; font-weight: 900">Artists: <span style="color: #FFC935">Get your checklist today.</span></h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E6E6E6">The earlier you start, the more you can do. Get the free toolkit.</p>
 </div>
-<form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="flex: 1.2 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<label for="break2-email" style="font-size: 16px; font-weight: 700">Email</label>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<input id="break2-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="flex: 1 1 240px; min-width: 0; font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #FFFFFF; border-radius: 12px; min-height: 52px; box-sizing: border-box; background: #FFFFFF; color: #000000">
-<button type="submit" style="font-family: inherit; background: #ED1B24; color: #FFFFFF; border: none; padding: 14px 26px; border-radius: 999px; font-weight: 800; font-size: 19px; min-height: 52px; cursor: pointer">Get Free Access</button>
+<form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="flex: 1.2 1 440px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
+<div style="flex: 1 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<label for="break2-first-name" style="font-size: 16px; font-weight: 700">First name</label>
+<input required id="break2-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="width: 100%; font-family: inherit; font-size: 18px; padding: 14px 16px; border-radius: 12px; min-height: 52px; box-sizing: border-box; border: 2px solid #FFFFFF; background: #FFFFFF; color: #000000">
 </div>
-<p style="margin: 0; font-size: 14px; color: #CFCFCF">Free. No spam. Unsubscribe anytime.</p>
+<div style="flex: 1.3 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<label for="break2-email" style="font-size: 16px; font-weight: 700">Email</label>
+<input required id="break2-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="width: 100%; font-family: inherit; font-size: 18px; padding: 14px 16px; border-radius: 12px; min-height: 52px; box-sizing: border-box; border: 2px solid #FFFFFF; background: #FFFFFF; color: #000000">
+</div>
+<button type="submit" style="flex: 1 1 100%; font-family: inherit; background: #ED1B24; color: #FFFFFF; border: none; padding: 14px 26px; border-radius: 999px; font-weight: 800; font-size: 19px; min-height: 52px; cursor: pointer">Get Free Access</button>
+<p style="margin: 0; flex: 1 1 100%; font-size: 14px; color: #CFCFCF">Free. No spam. Unsubscribe anytime.</p>
 </form>
 </div>
 </section>
@@ -257,7 +265,7 @@ a{color:#000000}a:hover{color:#ED1B24}
 <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
 <li style="background: #D2EDF0; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
 <span style="width: 52px; height: 52px; border-radius: 50%; background: #000000; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 22px">1</span>
-<h3 style="margin: 0; font-size: 24px; font-weight: 800">Enter your email</h3>
+<h3 style="margin: 0; font-size: 24px; font-weight: 800">Enter your name and email</h3>
 <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #222222">Takes ten seconds. No account needed.</p>
 </li>
 <li style="background: #C7B5D8; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
@@ -338,11 +346,11 @@ a{color:#000000}a:hover{color:#ED1B24}
 <form action="https://app.kit.com/forms/10139706/subscriptions" method="post" style="width: 100%; background: #FFFFFF; color: #000000; border-radius: 20px; padding: clamp(24px, 3vw, 40px); display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; text-align: left; box-sizing: border-box">
 <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 8px">
 <label for="final-first-name" style="font-size: 16px; font-weight: 700">First name</label>
-<input id="final-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
+<input required id="final-first-name" name="fields[first_name]" type="text" autocomplete="given-name" placeholder="Your first name" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
 </div>
 <div style="flex: 1.4 1 280px; display: flex; flex-direction: column; gap: 8px">
 <label for="final-email" style="font-size: 16px; font-weight: 700">Email</label>
-<input id="final-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
+<input required id="final-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" style="font-family: inherit; font-size: 18px; padding: 14px 16px; border: 2px solid #000000; border-radius: 12px; min-height: 52px; box-sizing: border-box; width: 100%">
 </div>
 <button type="submit" style="font-family: inherit; background: #ED1B24; color: #FFFFFF; border: none; padding: 16px 30px; border-radius: 999px; font-weight: 800; font-size: 20px; min-height: 52px; cursor: pointer">Send Me the Toolkit</button>
 <p style="margin: 0; flex: 1 1 100%; font-size: 14px; color: #555555">No spam. Unsubscribe anytime.</p>
